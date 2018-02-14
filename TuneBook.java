@@ -58,18 +58,18 @@ public class TuneBook
 
     public String toString()
     {
-        StringBuffer sb = new StringBuffer();
+        StringBuffer str = new StringBuffer();
         for(String word:words)
         {
-            sb.append(word + ", ");
+            str.append(word + ", ");
         }
 
-        return sb.toString();
+        return str.toString();
     }
 
     public Tune findTune(String title)
     {
-    	
+
     }
 
     public static void main(String[] args)
