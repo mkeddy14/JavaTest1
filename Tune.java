@@ -1,7 +1,13 @@
 package ie.dit;
 
+import java.io.IOException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.io.BufferedReader;
+
 public class Tune
 {
+	//x field
 	private int x;
 
 	public int getX()
@@ -14,6 +20,7 @@ public class Tune
 		getX(x);
 	}
 
+	//title field
 	private String title;
 
 	public int getTitle()
@@ -26,7 +33,7 @@ public class Tune
 		getTitle(title);
 	}
 
-
+	//altTitle field
 	private String altTitle;
 
 	public int getAltTitle()
@@ -39,6 +46,7 @@ public class Tune
 		getAltTitle(altTitle);
 	}
 
+	//notation field
 	private String notation;
 
 	public int getNotation()
@@ -51,4 +59,14 @@ public class Tune
 		getNotation(notation);
 	}
 
+	//toString
+	public String toString()
+    {
+	    String str = "";
+        for(String words:tunes)
+        {
+        	str += words + "x," + "title," + "altTitle";
+        }
+        return str;
+    }
 }
