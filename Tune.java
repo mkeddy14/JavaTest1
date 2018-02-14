@@ -62,11 +62,11 @@ public class Tune
 	//toString
 	public String toString()
     {
-	    String str = "";
+	    String st = "";
         for(String word:words)
         {
-        	str += words + "x," + "title," + "altTitle";
+        	st += words + "x," + "title," + "altTitle";
         }
-        return str;
+        return st;
     }
 }
